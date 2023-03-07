@@ -41,10 +41,5 @@ jobs:
       - image: circleci/node:10.16.3
     steps:
       - run:
-<<<<<<< HEAD
           name: deploy-application
           command: ssh -o StrictHostKeyChecking=no $EC2_USERNAME@$EC2_PUBLIC_DNS "rm -rf SimpleApplication/;git clone https://github.com/GSNCI/SimpleApplication.git; source SimpleApplication/deploy.sh"
-=======
-            name: deploy-application
-            command: ssh -o StrictHostKeyChecking=no $EC2_USERNAME@EC2_PUBLIC_DNS "rm -rf SimpleApplication/;git clone https://github.com/GSNCI/SimpleApplication.git; source SimpleApplication/deploy.sh "
->>>>>>> 319484cbc5d5d353b3cea2fbae2f8474c64d2488
